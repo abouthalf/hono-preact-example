@@ -2,6 +2,8 @@ import { Hono } from "hono";
 import { Fragment } from "hono/jsx";
 import { renderer } from "./renderer";
 
+import InfoCard from "./server/InfoCard";
+
 const app = new Hono();
 
 app.get("*", renderer);
@@ -15,8 +17,15 @@ app.get("/", (c) => {
             <h1>Vite + Preact + Hono!</h1>
             <h2>The Preact element is injected below 👇</h2>
           </hgroup>
+          <a
+            role="button"
+            href="https://github.com/abouthalf/hono-preact-example"
+          >
+            View on GitHub
+          </a>
         </header>
         <div id="app"></div>
+        <InfoCard />
       </main>
     </Fragment>,
 

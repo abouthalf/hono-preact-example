@@ -1,6 +1,7 @@
-html,
-body {
-  font-family: system-ui, sans-serif;
-  font-weight: normal;
-  font-size: 32px;
+h1 {
+  color: var(--primary);
+}
+
+pre {
+  font-size: var(--font-size);
 }

@@ -37,6 +37,9 @@ export default defineConfig(({ mode }) => {
   } else {
     return {
       name: "server",
+      server: {
+        port: 5000,
+      },
       plugins: [
         pages({
           entry: "src/index.tsx",

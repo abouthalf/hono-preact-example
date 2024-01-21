@@ -1,6 +1,5 @@
 import { useState } from "preact/hooks";
 import styles from "./app.module.css";
-import "./global.css";
 
 export function App() {
   const [count, setCount] = useState(0);
