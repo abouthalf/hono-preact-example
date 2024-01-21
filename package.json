@@ -1,12 +1,14 @@
 {
   "type": "module",
   "scripts": {
-    "start": "npm run dev",
-    "dev": "npm run dev:client & npm run dev:server",
+    "start": "$npm_execpath  run dev",
+    "dev": "dev:client & dev:server",
     "dev:server": "vite",
     "dev:client": "vite --mode client",
     "build": "vite build && vite build --mode client",
-    "preview": "wrangler pages dev dist",
+    "build:server": "vite build",
+    "build:client": "vite build --mode client",
+    "preview": "wrangler pages dev dist  --compatibility-date=2024-01-21",
     "deploy": "$npm_execpath run build && wrangler pages deploy dist"
   },
   "dependencies": {

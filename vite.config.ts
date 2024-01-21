@@ -1,7 +1,7 @@
-import pages from "@hono/vite-cloudflare-pages";
-import devServer from "@hono/vite-dev-server";
-import preact from "@preact/preset-vite";
-import { defineConfig } from "vite";
+import pages from '@hono/vite-cloudflare-pages';
+import devServer from '@hono/vite-dev-server';
+import preact from '@preact/preset-vite';
+import { defineConfig } from 'vite';
 
 /**
  * @type {import('vite').UserConfig}
@@ -13,21 +13,21 @@ import { defineConfig } from "vite";
  * vite build && vite build --mode client
  */
 export default defineConfig(({ mode }) => {
-  if (mode === "client") {
+  if (mode === 'client') {
     return {
-      name: "client",
+      name: 'client',
       server: {
-        origin: "http://localhost:3000",
+        origin: 'http://localhost:3000',
         port: 3000,
       },
       plugins: [preact()],
       build: {
         rollupOptions: {
-          input: "./src/client.tsx",
+          input: './src/client.tsx',
           output: {
-            dir: "./dist/static",
-            entryFileNames: "client.js",
-            assetFileNames: "[name][extname]",
+            dir: './dist/static',
+            entryFileNames: 'client.js',
+            assetFileNames: '[name][extname]',
           },
         },
         emptyOutDir: false,
@@ -36,16 +36,13 @@ export default defineConfig(({ mode }) => {
     };
   } else {
     return {
-      name: "server",
       server: {
         port: 5000,
       },
       plugins: [
-        pages({
-          entry: "src/index.tsx",
-        }),
+        pages(),
         devServer({
-          entry: "src/index.tsx",
+          entry: 'src/index.tsx',
         }),
       ],
     };

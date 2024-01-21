@@ -16,6 +16,20 @@ This is accomplished with a two-part configuration, one config for Hono, one for
 
 Both builds are run simultaneously with `npm star` or `npm run dev`;
 
+### Why Hono?
+
+Tt's teeny and elegant, supports Typescript out of the box, JSX for templating, and smells like rosemary.
+
+### Why Preact?
+
+Preact is everything good about React with far less bloat. Preact embraces modern browsers and native browser events. Preact is smaller, lighter, and faster than React.
+
+Preact can be [configured](https://preactjs.com/guide/v10/switching-to-preact/#setting-up-compat) to be 100% compatible with existing React libraries (if you need it).
+
+Preact also has a nice [state management solution](https://preactjs.com/guide/v10/signals), which React sorely lacks.
+
+You could probably easily reconfigure this project to use Vite's React plugin (or Vue, or whatever) if that is more your cup of tea. 🍵
+
 ## Get started
 
 After checking out the project, install dependencies with NPM (or your favorite package manager).

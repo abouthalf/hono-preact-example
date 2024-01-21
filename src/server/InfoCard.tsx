@@ -1,3 +1,6 @@
+/**
+ * A simple Hono JSX component
+ */
 export default function InfoCard() {
   return (
     <article>
@@ -6,7 +9,7 @@ export default function InfoCard() {
       <p>
         This project is based upon this recipe in the Hono documentation:
         <br></br>
-        <a href="https://hono.dev/getting-started/cloudflare-pages#client-side">
+        <a href='https://hono.dev/getting-started/cloudflare-pages#client-side'>
           https://hono.dev/docs/recipes/vite
         </a>
       </p>
