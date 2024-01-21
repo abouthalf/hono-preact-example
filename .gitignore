@@ -1,0 +1,17 @@
+# dependencies
+node_modules
+
+# build
+dist
+
+# local env files
+.wrangler
+.dev.vars
+
+# package files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Mac Bits
+.DS_Store
