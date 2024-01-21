@@ -2,9 +2,10 @@
 
 This project combines [Preact](https://preactjs.com) and [Hono](https://hono.dev).
 
-Hono forms the server layer, with server-side JSX as the templating system for your HTML output.
+- Hono forms the server layer, with server-side JSX as the templating system for your HTML output.
+- Preact provides interactive application UX components.
 
-Preact provides interactive application components.
+Check it out: [https://hono-preact-example.pages.dev](https://hono-preact-example.pages.dev)
 
 ## Why tho?
 
@@ -18,7 +19,7 @@ Both builds are run simultaneously with `npm star` or `npm run dev`;
 
 ### Why Hono?
 
-Tt's teeny and elegant, supports Typescript out of the box, JSX for templating, and smells like rosemary.
+It's teeny and elegant, supports TypeScript out of the box, JSX for templating, and smells like rosemary.
 
 ### Why Preact?
 
